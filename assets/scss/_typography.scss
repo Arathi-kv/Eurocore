@@ -1,0 +1,116 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+$heading-font: 'DM Sans', sans-serif;
+$body-font: "DM Sans", sans-serif;
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Free";
+
+body {
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-color;
+    background-color: $white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+	padding: 0;
+}
+
+input:focus{
+	color: $white;
+	outline: none;
+}
+
+input{
+	color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    margin: 0px;
+	padding: 0;
+    color: $header-color;
+	text-transform: capitalize;
+	@include transition;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 106%;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 115%;
+	font-weight: 800;
+
+	@include breakpoint(max-md){
+		font-size: 36px;
+	}
+}
+h3 {
+	font-size: 22px;
+	font-weight: 700;
+
+	@include breakpoint(max-sm){
+		font-size: 20px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: $header-color;
+	@include transition;
+}
+
+p {
+    margin: 0px;
+	@include transition;
+}
+
+span {
+	margin: 0px;
+	@include transition;
+}
+
