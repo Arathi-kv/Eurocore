@@ -7493,3 +7493,10 @@ input.main-search-input::placeholder {
     border-radius: 20px;
     height: 100%;
 }
+
+
+
+
+.header-main .main-menu ul li a {
+    text-transform: uppercase !important;
+}
