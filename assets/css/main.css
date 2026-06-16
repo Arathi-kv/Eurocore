@@ -255,7 +255,7 @@ span {
 }
 
 .about-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 @media (max-width: 1399px) {
   .about-wrapper {
@@ -7371,7 +7371,7 @@ input.main-search-input::placeholder {
 .work-process-section-3 {
     position: relative;
     overflow: hidden;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 .work-process-section-3::before {
@@ -7440,4 +7440,36 @@ input.main-search-input::placeholder {
 .work-process-box p {
     margin: 0;
     line-height: 1.8;
+}
+
+ /*------------EUROCORE NETWORK -------------*/
+
+.global-network-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.network-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.80; /* visibility */
+    z-index: 1;
+}
+
+.global-network-section .container{
+    position: relative;
+    z-index: 2;
+}
+
+
+.global-title {
+    color: var(--theme);
+    line-height: 1.8;
+}
+
+.breadcrumb-image > img {
+    display: none;
 }
