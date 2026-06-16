@@ -2573,7 +2573,7 @@ span {
   position: relative;
   list-style: none;
   display: inline-block;
-  margin-inline-end: 50px;
+  margin-inline-end: 40px;
 }
 .header-main .main-menu ul li:last-child {
   margin-inline-end: 0;
