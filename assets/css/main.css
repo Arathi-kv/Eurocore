@@ -7438,7 +7438,7 @@ input.main-search-input::placeholder {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.80; /* visibility */
+    opacity: 0.60; /* visibility */
     z-index: 1;
 }
 
@@ -7462,35 +7462,6 @@ input.main-search-input::placeholder {
     border-radius: 20px;
     overflow: hidden;
 }
-
-
-/* ---------Contact page --------*/
-
-.map-box {
-    height: 100%;
-}
-
-.map-box iframe {
-    width: 100%;
-    height: 620px;
-    border: 0;
-    border-radius: 20px;
-}
-
-@media (max-width: 991px) {
-    .contact-form-items {
-        padding: 25px;
-    }
-
-    .map-box {
-        margin-top: 30px;
-    }
-
-    .map-box iframe {
-        height: 350px;
-    }
-}
-
 
 
 /* ---------Heder hamburger--------*/
@@ -7529,6 +7500,33 @@ input.main-search-input::placeholder {
 }
 
 
+/* ---------Contact page --------*/
+
+.map-box {
+    height: 100%;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 620px;
+    border: 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .contact-form-items {
+        padding: 25px;
+    }
+
+    .map-box {
+        margin-top: 30px;
+    }
+
+    .map-box iframe {
+        height: 350px;
+    }
+}
+
 
 .contact-info-section{
     background:#f7f9fc;
@@ -7540,8 +7538,6 @@ input.main-search-input::placeholder {
     margin:15px auto 40px;
     color:#666;
 }
-
-
 
 .contact-card{
 
@@ -7559,15 +7555,11 @@ input.main-search-input::placeholder {
     border:1px solid transparent;
 }
 
-
-
 .contact-card:hover{
 
     transform:translateY(-8px);
     border-color:var(--theme);
 }
-
-
 
 .contact-icon{
 
@@ -7583,8 +7575,6 @@ input.main-search-input::placeholder {
     justify-content:center;
 }
 
-
-
 .contact-icon img{
 
     width:35px;
@@ -7592,16 +7582,12 @@ input.main-search-input::placeholder {
 
 }
 
-
-
 .contact-content h3{
 
     font-size:22px;
     margin-bottom:8px;
 
 }
-
-
 
 .contact-content p{
 
