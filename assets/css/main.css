@@ -2088,7 +2088,7 @@ span {
 }
 
 .header-top-wrapper-2 {
-  background-color: var(--theme);
+  background-color: #0a2845;
   padding: 15px 30px;
   display: flex;
   align-items: center;
@@ -2407,7 +2407,7 @@ span {
   height: 100%;
   width: 180px;
   content: "";
-  background-color: var(--theme);
+  background-color:#0a2845;
   z-index: -1;
 }
 @media (max-width: 1399px) {
