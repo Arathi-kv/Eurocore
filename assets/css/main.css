@@ -1804,7 +1804,7 @@ span {
   height: 100%;
   content: "";
   z-index: -1;
-  background-color: var(--header);
+  background-color:#0a2845;
   opacity: 0.95;
 }
 .footer-section.style-radius {
@@ -2491,7 +2491,7 @@ span {
 .header-3 {
   position: relative;
   z-index: 99;
-  background-color: var(--bg);
+  background-color:#0a2845;
   padding-top: 5px;
 }
 @media (max-width: 1600px) {
@@ -3995,7 +3995,7 @@ span {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: var(--bg);
+  background-color:#0a2845;
   height: 25%;
 }
 .hero-3 .hero-image {
@@ -5932,7 +5932,7 @@ input.main-search-input::placeholder {
 }
 
 .section-bg {
-  background-color: var(--bg);
+  background-color:#0a2845;
 }
 
 .section-bg-2 {
@@ -7650,4 +7650,10 @@ input.main-search-input::placeholder {
 
 }
 
+}
+
+
+.footer-section{
+    background: #0A2845;
+    background-image: none !important;
 }
