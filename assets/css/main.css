@@ -5030,18 +5030,14 @@ span {
 }
 
 .preloader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 9999999;
-}
-
-.preloader > * {
-    margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh; /* instead of 100% */
+  z-index: 9999999;
 }
 .preloader .animation-preloader {
   z-index: 1000;
