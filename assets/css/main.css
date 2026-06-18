@@ -7731,3 +7731,25 @@ input.main-search-input::placeholder {
     line-height: 1.8;
     word-break: break-word;
 }
+
+
+@media (max-width: 767px) {
+  
+    .contact-content a[href^="mailto:"] {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .contact-content p br.mobile-break {
+        display: block;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .contact-content a[href^="tel:"] {
+        white-space: nowrap;
+    }
+}
