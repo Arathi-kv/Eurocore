@@ -173,7 +173,7 @@ h2 {
 }
 @media (max-width: 767px) {
   h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
@@ -1884,7 +1884,7 @@ span {
   opacity: 0.7;
 }
 .contact-info-area .contact-info-items .content h3 {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--white);
   text-transform: initial;
 }
@@ -2438,7 +2438,7 @@ span {
 }
 @media (max-width: 1399px) {
   .header-2 .header-right {
-    gap: 30px !important;
+    gap: 10px !important;
   }
 }
 .header-2 .header-right .header-button {
@@ -7715,5 +7715,13 @@ input.main-search-input::placeholder {
 
     .work-process-section-3 .work-process-box {
         margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact-info-area .contact-info-items .content h3 a {
+        font-size: 16px;
+        line-height: 1.4;
     }
 }
