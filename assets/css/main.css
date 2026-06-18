@@ -7657,3 +7657,34 @@ input.main-search-input::placeholder {
     background: #0A2845;
     background-image: none !important;
 }
+
+
+.logo-loading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-loading img {
+    max-width: 180px;
+    height: auto;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
+.logo-loading img {
+    max-width: 180px;
+    height: auto;
+}
