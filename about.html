@@ -35,41 +35,35 @@
     </head>
     <body>
 
-       .preloader {
-    position: fixed;
-    inset: 0;
-    background: #fff;
-    z-index: 999999;
-}
+           <!-- Preloader Start -->
+<div id="preloader" class="preloader">
+    <div class="animation-preloader">
 
-.animation-preloader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        <!-- Logo Loader -->
+        <div class="logo-loader">
+            <img src="assets/img/logo.png" alt="Eurocore Logo">
+        </div>
 
-.logo-loader img {
-    width: 180px;   /* Adjust size */
-    height: auto;
-    animation: logoPulse 1.5s ease-in-out infinite;
-}
+    </div>
 
-@keyframes logoPulse {
-    0% {
-        opacity: .5;
-        transform: scale(.95);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: .5;
-        transform: scale(.95);
-    }
-}
-
+    <div class="loader">
+        <div class="row">
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader End -->
         <!--<< Mouse Cursor Start >>-->  
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
@@ -472,7 +466,7 @@
             <h2>Our Commitment to Quality Excellence</h2>
             <p>EUROCORE recognizes and understands that the full involvement of all employees is necessary to achieve all our goals.<br>
                 We always strive to provide quality & reliable service to all our clients.</p>
-        </div><br>
+        </div>
 
         <div class="row g-4">
 
