@@ -7688,3 +7688,44 @@ input.main-search-input::placeholder {
     max-width: 180px;
     height: auto;
 }
+
+
+
+@media (max-width: 767px) {
+    .preloader .animation-preloader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .preloader .animation-preloader .txt-loading {
+        width: 180px;
+        height: 80px;
+        margin: 0 auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: none !important;
+    }
+
+    .preloader .animation-preloader .txt-loading .letters-loading {
+        display: none;
+    }
+
+    .preloader p {
+        margin-top: 15px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+}
+
+
+.preloader .animation-preloader .txt-loading {
+    position: relative;
+    left: 0 !important;
+    right: 0 !important;
+    transform: translateX(0) !important;
+}
