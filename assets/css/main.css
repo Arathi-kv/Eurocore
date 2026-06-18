@@ -7658,7 +7658,7 @@ input.main-search-input::placeholder {
     background-image: none !important;
 }
 
-
+/*preloader text replace by logo*/
 .preloader {
     position: fixed;
     inset: 0;
