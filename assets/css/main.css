@@ -7657,3 +7657,39 @@ input.main-search-input::placeholder {
     background: #0A2845;
     background-image: none !important;
 }
+
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 999999;
+}
+
+.animation-preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-loader img {
+    width: 180px;   /* Adjust size */
+    height: auto;
+    animation: logoPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+    0% {
+        opacity: .5;
+        transform: scale(.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: .5;
+        transform: scale(.95);
+    }
+}
