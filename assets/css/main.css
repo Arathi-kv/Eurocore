@@ -7664,3 +7664,32 @@ input.main-search-input::placeholder {
         max-width: 150px;
     }
 }
+
+
+@media (max-width: 767px) {
+    .preloader {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .preloader .animation-preloader {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        width: auto !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .logo-loading {
+        margin: 0 auto !important;
+    }
+
+    .logo-loading img {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+    }
+}
