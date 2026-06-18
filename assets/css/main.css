@@ -7657,3 +7657,15 @@ input.main-search-input::placeholder {
     background: #0A2845;
     background-image: none !important;
 }
+
+
+.section-title {
+    font-size: 40px; /* Desktop */
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 28px; /* Mobile */
+        line-height: 1.3;
+    }
+}
