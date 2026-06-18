@@ -7665,7 +7665,7 @@ input.main-search-input::placeholder {
 
 @media (max-width: 767px) {
     .section-title {
-        font-size: 28px; /* Mobile */
+        font-size: 26px; /* Mobile */
         line-height: 1.3;
     }
 }
