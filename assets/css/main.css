@@ -7725,3 +7725,9 @@ input.main-search-input::placeholder {
         line-height: 1.4;
     }
 }
+
+.contact-card .contact-content p {
+    width: 100%;
+    line-height: 1.8;
+    word-break: break-word;
+}
