@@ -7726,30 +7726,32 @@ input.main-search-input::placeholder {
     }
 }
 
-.contact-card .contact-content p {
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-icon {
+    margin-bottom: 20px;
+}
+
+.contact-content {
     width: 100%;
-    line-height: 1.8;
-    word-break: break-word;
 }
 
-
-@media (max-width: 767px) {
-  
-    .contact-content a[href^="mailto:"] {
-        display: block;
-        margin-top: 5px;
-    }
-
-    .contact-content p br.mobile-break {
-        display: block;
-    }
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-content i {
+    color: var(--theme);
+    margin-right: 8px;
+    font-size: 18px;
 }
 
-
-
-
 @media (max-width: 767px) {
-    .contact-content a[href^="tel:"] {
-        white-space: nowrap;
+    .contact-content p {
+        font-size: 12px;
     }
 }
