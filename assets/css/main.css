@@ -2109,7 +2109,7 @@ span {
   height: 100%;
   width: 180px;
   content: "";
-  background-color: var(--white);
+  background-color: #0A2845;
   z-index: -1;
 }
 @media (max-width: 1399px) {
@@ -2153,7 +2153,7 @@ span {
   gap: 20px;
 }
 .header-top-wrapper-2 .social-icon a {
-  color: var(--header);
+  color: var(--white);
 }
 @media (max-width: 1399px) {
   .header-top-wrapper-2 .social-icon a {
@@ -2407,7 +2407,7 @@ span {
   height: 100%;
   width: 180px;
   content: "";
-  background-color:#0a2845;
+  background-color:#ffffff;
   z-index: -1;
 }
 @media (max-width: 1399px) {
@@ -2444,11 +2444,7 @@ span {
 .header-2 .header-right .header-button {
   margin-right: 57px;
 }
-@media (max-width: 1899px) {
-  .header-2 .header-right .header-button {
-    display: none;
-  }
-}
+
 .header-2 .header-right .header-button .theme-btn {
   background-color: var(--header);
 }
@@ -2556,14 +2552,14 @@ span {
   position: relative;
   list-style: none;
   display: inline-block;
-  margin-inline-end: 40px;
+  margin-inline-end: 32px;
 }
 .header-main .main-menu ul li:last-child {
   margin-inline-end: 0;
 }
 .header-main .main-menu ul li a {
   display: inline-block;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--header);
   padding: 20px 0;
@@ -7754,4 +7750,462 @@ input.main-search-input::placeholder {
     .contact-content p {
         font-size: 12px;
     }
+}
+
+
+
+
+/* Team section Strats */
+.ceo-message-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-left: 4px solid var(--theme-color);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.ceo-message-box p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.ceo-message-box h6 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+.leadership-section{
+    background:#f8f9fb;
+}
+
+.leader-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+}
+
+.leader-image{
+    flex:0 0 320px;
+}
+
+.leader-image img{
+    width:100%;
+    border-radius:15px;
+}
+
+.designation{
+    display:inline-block;
+    color:var(--theme);
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.content-box,
+.message-box{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.content-box p,
+.message-box p{
+    line-height:1.9;
+    color:#666;
+}
+
+.message-box{
+    background:var(--theme);
+    color:#fff;
+}
+
+.message-box p,
+.message-box h5,
+.message-box h6{
+    color:#fff;
+}
+
+.message-box i{
+    font-size:40px;
+    opacity:.15;
+    margin-bottom:15px;
+}
+
+@media(max-width:991px){
+
+    .leader-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .leader-image{
+        flex:unset;
+        width:280px;
+    }
+
+}
+
+
+.ceo-message{
+    margin-top:25px;
+    background:var(--theme);
+    color:#fff;
+    padding:25px;
+    border-radius:15px;
+}
+
+.ceo-message p,
+.ceo-message h5{
+    color:#fff;
+    margin-bottom:0;
+}
+
+.ceo-message i{
+    font-size:30px;
+    opacity:.2;
+    margin-bottom:10px;
+}
+
+
+.leader-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    max-width:1350px; /*  card width */
+    margin:0 auto;   /* Center the card */
+    margin-bottom:20px; /* Space between cards */
+}
+
+.leader-image{
+    flex: 0 0 320px;
+    width: 320px;
+    height: 450px; /* Same height for all images */
+}
+
+.leader-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fills the box without distortion */
+    border-radius: 15px;
+}
+
+@media (max-width: 991px){
+
+    .leader-image{
+        width: 280px;
+        height: 350px;
+    }
+
+}
+
+/* Leadership Grid */
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.team-member{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:center;
+    transition:all .3s ease;
+    height:100%;
+}
+
+.team-member:hover{
+    transform:translateY(-5px);
+}
+
+.team-member img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.team-member h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.team-member span{
+    display:block;
+    color:var(--theme);
+    font-weight:600;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.team-member p{
+    font-size:15px;
+    line-height:1.8;
+    color:#666;
+    margin-bottom:0;
+    text-align: justify;
+}
+
+/* Tablet */
+@media(max-width:991px){
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:767px){
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-member img{
+        height:220px;
+    }
+}
+
+.team-grid{
+    max-width:1400px;
+    margin:40px auto 0;
+}
+
+.team-grid{
+    margin-bottom: 80px;
+}
+
+.leader-card h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* WhatsApp Chat Button Styling */
+.whatsapp-chat-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 60px; /* Button width */
+  height: 60px; /* Button height */
+  z-index: 1000;
+  background-color: #25d366; /* WhatsApp green */
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-chat-button img {
+  width: 30px; /* WhatsApp icon size */
+  height: 30px;
+}
+
+.whatsapp-chat-button:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.back-to-top {
+  display: none;
+}
+
+
+
+
+@media (max-width: 1199px) {
+    .header-button {
+        display: none !important;
+    }
+  }
+
+  /* ==========================
+   Careers Section
+========================== */
+.career-section {
+    background: #f8f9fa;
+}
+
+.career-section .contact-form-items {
+    max-width: 900px;
+    margin: 50px auto 0;
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.career-section .title h2 {
+    margin-bottom: 10px;
+}
+
+.career-section .form-clt {
+    position: relative;
+}
+
+.career-section .form-clt input,
+.career-section .form-clt textarea,
+.career-section .form-clt select {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px 20px 15px 50px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.career-section .form-clt textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.career-section .form-clt input:focus,
+.career-section .form-clt textarea:focus,
+.career-section .form-clt select:focus {
+    border-color: #0A2845;
+    box-shadow: 0 0 10px rgba(13,110,253,0.15);
+    outline: none;
+}
+
+.career-section .form-clt .icon {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    color: #0A2845;
+    font-size: 16px;
+}
+
+.career-section input[type="file"] {
+    padding: 14px;
+    border: 2px dashed #d5d5d5;
+    border-radius: 10px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.career-section input[type="file"]:hover {
+    border-color: #0A2845;
+}
+
+.career-section .theme-btn {
+    height: 60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.career-section .section-title p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Upload Box */
+.resume-upload {
+    border: 2px dashed #d5d5d5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.resume-upload:hover {
+    border-color: #0A2845;
+    background: #f4f8ff;
+}
+
+.resume-upload i {
+    font-size: 40px;
+    color: #0A2845;
+    margin-bottom: 15px;
+}
+
+.resume-upload h5 {
+    margin-bottom: 8px;
+}
+
+.resume-upload p {
+    margin-bottom: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .career-section .contact-form-items {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .career-section .form-clt input,
+    .career-section .form-clt textarea,
+    .career-section .form-clt select {
+        padding: 14px 15px 14px 45px;
+        font-size: 14px;
+    }
+
+    .career-section .theme-btn {
+        height: 55px;
+        font-size: 14px;
+    }
+}
+
+/* Fix form typing issue */
+.career-section .form-clt {
+    position: relative;
+    z-index: 1;
+}
+
+.career-section .form-clt input,
+.career-section .form-clt textarea,
+.career-section .form-clt select {
+    position: relative;
+    z-index: 5;
+    pointer-events: auto !important;
+    color: #222;
+    background: #fff;
+}
+
+.career-section .form-clt .icon {
+    z-index: 6;
+    pointer-events: none;
+}
+
+.career-section form {
+    position: relative;
+    z-index: 10;
+}
+input:invalid,
+textarea:invalid {
+    border-color: #dc3545;
+}
+
+input:valid,
+textarea:valid {
+    border-color: #28a745;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    box-shadow: 0 0 5px rgba(220,53,69,.3);
 }

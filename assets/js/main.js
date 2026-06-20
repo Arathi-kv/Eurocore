@@ -561,3 +561,39 @@ CSS TABLE OF CONTENTS
 
 })(jQuery); // End jQuery
 
+
+
+    // Allow only numbers in phone field
+    document.getElementById("phone").addEventListener("input", function () {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    // Resume validation
+    document.querySelector("form").addEventListener("submit", function(e) {
+
+        const fileInput = document.querySelector('input[name="resume"]');
+        const file = fileInput.files[0];
+
+        if (file) {
+
+            const allowedTypes = [
+                "application/pdf",
+                "application/msword",
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            ];
+
+            if (!allowedTypes.includes(file.type)) {
+                alert("Please upload only PDF, DOC, or DOCX files.");
+                e.preventDefault();
+                return;
+            }
+
+            const maxSize = 5 * 1024 * 1024; // 5MB
+
+            if (file.size > maxSize) {
+                alert("Resume size must be less than 5MB.");
+                e.preventDefault();
+                return;
+            }
+        }
+    });
