@@ -9,23 +9,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $experience = $_POST['experience'];
     $message    = $_POST['message'];
 
-    $to = "arathi@signroots.com"; // Change to your HR email
+    // Resume Upload
+    $resumePath = "";
+
+    if(isset($_FILES['resume']) && $_FILES['resume']['error'] == 0){
+
+        $uploadDir = "uploads/";
+
+        if(!file_exists($uploadDir)){
+            mkdir($uploadDir, 0755, true);
+        }
+
+        $resumeName = time() . "_" . basename($_FILES["resume"]["name"]);
+        $resumePath = $uploadDir . $resumeName;
+
+        move_uploaded_file($_FILES["resume"]["tmp_name"], $resumePath);
+    }
+
+    $to = "arathi@signroots.com";
     $subject = "New Job Application - " . $fullname;
 
     $body = "
-    New Job Application Received
+New Job Application Received
 
-    Full Name: $fullname
-    Email: $email
-    Phone: $phone
-    Position: $position
-    Experience: $experience Years
+Full Name: $fullname
+Email: $email
+Phone: $phone
+Position Applied: $position
+Experience: $experience Years
 
-    Message:
-    $message
-    ";
+Resume:
+$resumePath
 
-    $headers = "From: $email";
+Message:
+$message
+";
+
+    $headers = "From: noreply@yourdomain.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
     if(mail($to, $subject, $body, $headers)){
         echo "<script>
