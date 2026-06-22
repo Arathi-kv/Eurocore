@@ -2,6 +2,27 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    // Google reCAPTCHA Verification
+    $secretKey = "YOUR_SECRET_KEY";
+
+    if (empty($_POST['g-recaptcha-response'])) {
+        die("Please verify the CAPTCHA.");
+    }
+
+    $captcha = $_POST['g-recaptcha-response'];
+
+    $verifyResponse = file_get_contents(
+        "https://www.google.com/recaptcha/api/siteverify?secret="
+        . $secretKey .
+        "&response=" . $captcha
+    );
+
+    $responseData = json_decode($verifyResponse);
+
+    if (!$responseData->success) {
+        die("CAPTCHA verification failed.");
+    }
+
     $fullname   = htmlspecialchars($_POST['fullname']);
     $email      = htmlspecialchars($_POST['email']);
     $phone      = htmlspecialchars($_POST['phone']);
@@ -9,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $experience = htmlspecialchars($_POST['experience']);
     $message    = htmlspecialchars($_POST['message']);
 
+    
     // Resume Upload
     $resumeName = "";
 
