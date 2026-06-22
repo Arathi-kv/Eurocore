@@ -8440,6 +8440,8 @@ textarea:focus:invalid {
         font-size:28px;
     }
 }
+
+
 .metals-section{
     background:#f5f5f5;
     padding:80px 0;
@@ -9211,6 +9213,71 @@ textarea:focus:invalid {
     .commodity-overview-box,
     .petro-card{
         margin-bottom:25px;
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .commodity-agri-table{
+        table-layout: fixed;
+        width:100%;
+    }
+
+    .commodity-agri-table th{
+        width:35%;
+        white-space:normal;
+    }
+
+    .commodity-agri-table td{
+        width:65%;
+        white-space:normal !important;
+        overflow-wrap:break-word;
+        word-wrap:break-word;
+        word-break:break-word;
+        line-height:1.7;
+    }
+
+    .commodity-agri-badge{
+        display:inline-block;
+        margin-bottom:6px;
+    }
+
+}
+
+/* ===============================
+   MOBILE TABLE FIX
+==================================*/
+@media (max-width:767px){
+
+    .commodity-agri-table,
+    .petro-info-table,
+    .petro-product-table,
+    .metals-table,
+    .metals-product-table{
+        width:100%;
+        table-layout:fixed;
+    }
+
+    .commodity-agri-table th,
+    .petro-info-table th,
+    .petro-product-table th,
+    .metals-table th,
+    .metals-product-table th{
+        width:35%;
+        white-space:normal !important;
+    }
+
+    .commodity-agri-table td,
+    .petro-info-table td,
+    .petro-product-table td,
+    .metals-table td,
+    .metals-product-table td{
+        white-space:normal !important;
+        word-break:break-word;
+        overflow-wrap:anywhere;
+        line-height:1.7;
     }
 
 }
