@@ -8027,11 +8027,7 @@ input.main-search-input::placeholder {
 
 
 
-@media (max-width: 1199px) {
-    .header-button {
-        display: none !important;
-    }
-  }
+
 
   /* ==========================
    Careers Section
@@ -8209,3 +8205,35 @@ input:focus:invalid,
 textarea:focus:invalid {
     box-shadow: 0 0 5px rgba(220,53,69,.3);
 }
+
+.header-main .main-menu ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-inline-end: 30px;
+}
+
+.profile-button a {
+    background-color: var(--theme);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.profile-button a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1199px) {
+    .profile-button {
+        display: none !important;
+    }
+  }

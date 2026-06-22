@@ -216,7 +216,7 @@
                                 </nav>
                                     </div>
                                 </div>
-                               <div class="header-button">
+                                 <div class="profile-button">
                                     <a href="assets/img/eurocore-business-profile.pdf" class="theme-btn" download>
                                         PROFILE
                                         <i class="fa-regular fa-download"></i>
@@ -319,240 +319,113 @@
             </div>
 
 
-            <!-- Formspree Form -->
-            <form 
-            action="https://formspree.io/f/mqeorogp"
-            method="POST"
-            enctype="multipart/form-data">
-
-
-            <!-- Email Subject -->
-            <input type="hidden" 
-            name="_subject" 
-            value="New Career Application">
-
-
+           <form action="career-form.php" method="POST" enctype="multipart/form-data">
                 <div class="row g-4">
 
-
                     <!-- Full Name -->
-                    <div class="col-lg-6 wow fadeInUp">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="form-clt">
-
-                            <input 
-                            type="text"
-                            name="Full Name"
-                            placeholder="Full Name"
-                            required
-                            minlength="3"
-                            pattern="[A-Za-z ]+"
-                            title="Please enter a valid name">
-
+                            <input type="text" name="fullname" placeholder="Full Name" required minlength="3" pattern="[A-Za-z ]+" title="Please enter a valid name">
                             <div class="icon">
                                 <i class="fa-regular fa-user"></i>
                             </div>
-
                         </div>
                     </div>
 
-
-
                     <!-- Email -->
-                    <div class="col-lg-6 wow fadeInUp">
-
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="form-clt">
-
-                            <input 
-                            type="email"
-                            name="Email"
+                            <input type="email"
+                            name="email"
                             placeholder="Email Address"
                             required>
-
                             <div class="icon">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
-
                         </div>
-
                     </div>
 
-
-
-
                     <!-- Phone -->
-                    <div class="col-lg-6 wow fadeInUp">
-
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="form-clt">
-
-                            <input 
-                            type="tel"
-                            name="Phone"
+                            <input type="tel"
+                            name="phone"
                             id="phone"
                             placeholder="Phone Number"
                             maxlength="15"
                             required>
-
-
                             <div class="icon">
                                 <i class="fa-regular fa-phone"></i>
                             </div>
-
-
                         </div>
-
                     </div>
 
-
-
-
                     <!-- Position -->
-                    <div class="col-lg-6 wow fadeInUp">
-
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="form-clt">
-
-
-                            <input 
-                            type="text"
-                            name="Position"
+                            <input type="text"
+                            name="position"
                             placeholder="Position Applying For"
                             required>
-
-
                             <div class="icon">
                                 <i class="fa-regular fa-briefcase"></i>
                             </div>
-
-
                         </div>
-
                     </div>
 
-
-
-
-
                     <!-- Experience -->
-                    <div class="col-lg-12 wow fadeInUp">
-
-
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
                         <div class="form-clt">
-
-
-                            <input 
-                            type="number"
-                            name="Experience"
+                           <input type="number"
+                            name="experience"
                             placeholder="Years of Experience"
                             min="0"
                             max="50">
-
-
                             <div class="icon">
                                 <i class="fa-regular fa-award"></i>
                             </div>
-
-
                         </div>
-
-
                     </div>
 
-
-
-
-
-                    <!-- Resume Upload -->
                     <div class="col-lg-12">
-
                         <div class="resume-upload">
-
-
                             <i class="fa-solid fa-cloud-arrow-up"></i>
-
-                            <h5>
-                                Upload Your Resume
-                            </h5>
-
-
-                            <p>
-                                Accepted formats: PDF, DOC, DOCX (Max 5MB)
-                            </p>
-
-
-                            <input 
-                            type="file"
-                            name="CV"
-                            id="resume"
-                            accept=".pdf,.doc,.docx"
-                            required>
-
+                            <h5>Upload Your Resume</h5>
+                            <p>Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
+                            <input type="file"
+                                name="resume"
+                                accept=".pdf,.doc,.docx"
+                                required>
 
                         </div>
-
                     </div>
 
-
-
-
-
-
-
-                    <!-- Message -->
-                    <div class="col-lg-12 wow fadeInUp">
-
-
+                    <!-- Cover Letter -->
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
                         <div class="form-clt">
-
-
-                            <textarea 
-                            name="Message"
+                            <textarea name="message"
                             placeholder="Tell us about yourself"
                             minlength="20"
                             required></textarea>
-
-
                             <div class="icon">
                                 <i class="fa-regular fa-file-lines"></i>
                             </div>
-
-
                         </div>
-
-
                     </div>
 
-
-
-
-
-
-                    <!-- Button -->
-                    <div class="col-lg-12">
-
-
-                        <button 
-                        type="submit"
-                        class="theme-btn w-100">
-
+                    <!-- Submit Button -->
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
+                        <button type="submit" class="theme-btn w-100">
                             SUBMIT APPLICATION
-
                         </button>
-
-
                     </div>
-
-
 
                 </div>
-
-
-
             </form>
-
-
         </div>
-
     </div>
 </section>
+
 <!-- Careers Application Section End -->
         
        
