@@ -8242,17 +8242,19 @@ textarea:focus:invalid {
  /* commodity page sections style  */
 
   .portfolio-cover-section{
-    background:#f5f5f5;
+    background:#ffffff;
+}
+.portfolio-cover-section{
+    padding: 50px;
 }
 
 .portfolio-cover{
-    background:#f5f5f5;
-    padding:10px 60px 5px 60px;
-/*         top right bottom left */
+    background:#ffffff;
+    padding:30px 60px 5px 60px;
 }
 
 .company-title h2{
-    font-size:52px;
+    font-size:42px;
     font-weight:800;
     color:#0f3770;
     letter-spacing:2px;
@@ -8270,11 +8272,11 @@ textarea:focus:invalid {
 .portfolio-cover hr{
     border:0;
     border-top:2px solid #d8dde5;
-    margin:50px 0;
+    margin:20px 0;
 }
 
 .portfolio-title h3{
-    font-size:46px;
+    font-size:32px;
     font-weight:800;
     color:#1d4c89;
     margin-bottom:18px;
@@ -8282,7 +8284,7 @@ textarea:focus:invalid {
 
 .portfolio-title p{
     color:#aeb6c5;
-    font-size:22px;
+    font-size:16px;
     font-weight:600;
     letter-spacing:1px;
     text-transform:uppercase;
@@ -8314,8 +8316,8 @@ textarea:focus:invalid {
     font-weight:500;
 }
 
-.logo img{
-    max-width:230px;
+.commodities-logo img{
+    max-width:250px;
 }
 
 @media (max-width:991px){
@@ -8357,7 +8359,7 @@ textarea:focus:invalid {
 }
 
 .commodity-overview-section .commodity-overview-title h2{
-    font-size:42px;
+    font-size:38px;
     font-weight:800;
     color:#14386f;
     margin:0;
@@ -8439,7 +8441,7 @@ textarea:focus:invalid {
     }
 }
 .metals-section{
-    background:#fff;
+    background:#f5f5f5;
     padding:80px 0;
 }
 
@@ -8450,7 +8452,7 @@ textarea:focus:invalid {
 }
 
 .metals-title{
-    font-size:42px;
+    font-size:38px;
     font-weight:800;
     color:#173d73;
     text-transform:uppercase;
@@ -8596,9 +8598,9 @@ textarea:focus:invalid {
     background:#fff;
 }
 
-.section-heading h2{
+.industry-heading h2{
     color:#12366f;
-    font-size:42px;
+    font: 38px;
     font-weight:700;
 }
 
@@ -8652,7 +8654,7 @@ textarea:focus:invalid {
 }
 
 .petro-title{
-    font-size:42px;
+    font-size:38px;
     font-weight:700;
     color:#16386B;
     margin-bottom:50px;
