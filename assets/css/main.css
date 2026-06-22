@@ -8237,3 +8237,573 @@ textarea:focus:invalid {
         display: none !important;
     }
   }
+
+
+ /* commodity page sections style  */
+
+  .portfolio-cover-section{
+    background:#f5f5f5;
+}
+
+.portfolio-cover{
+    background:#f5f5f5;
+    padding:10px 60px 5px 60px;
+/*         top right bottom left */
+}
+
+.company-title h2{
+    font-size:52px;
+    font-weight:800;
+    color:#0f3770;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.company-title span{
+    color:#b8c0cf;
+    font-size:18px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+.portfolio-cover hr{
+    border:0;
+    border-top:2px solid #d8dde5;
+    margin:50px 0;
+}
+
+.portfolio-title h3{
+    font-size:46px;
+    font-weight:800;
+    color:#1d4c89;
+    margin-bottom:18px;
+}
+
+.portfolio-title p{
+    color:#aeb6c5;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.portfolio-info h5{
+    color:#16376f;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.portfolio-info ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.portfolio-info ul li,
+.portfolio-info p{
+    color:#6d7785;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.portfolio-info a{
+    color:#0f4ca3;
+    text-decoration:underline;
+    font-weight:500;
+}
+
+.logo img{
+    max-width:230px;
+}
+
+@media (max-width:991px){
+
+    .portfolio-cover{
+        padding:50px 25px;
+    }
+
+    .company-title h2{
+        font-size:34px;
+    }
+
+    .portfolio-title h3{
+        font-size:30px;
+    }
+
+    .portfolio-title p{
+        font-size:16px;
+    }
+
+    .portfolio-info{
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .text-lg-end{
+        text-align:center !important;
+    }
+}
+
+/* Corporate Overview Section */
+.commodity-overview-section{
+    background:#f7f7f7;
+}
+
+.commodity-overview-section .commodity-overview-title{
+    border-bottom:3px solid #14386f;
+    padding-bottom:18px;
+}
+
+.commodity-overview-section .commodity-overview-title h2{
+    font-size:42px;
+    font-weight:800;
+    color:#14386f;
+    margin:0;
+}
+
+.commodity-overview-box{
+    background:#fff;
+    border-left:6px solid #1d4d8b;
+    padding:30px 35px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.commodity-overview-box p{
+    font-size:19px;
+    line-height:1.9;
+    color:#444;
+    margin:0;
+}
+
+.commodity-agri-content h3{
+    color:#214f8f;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.commodity-agri-content p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
+
+.commodity-agri-table{
+    margin-top:35px;
+    border:1px solid #e5e5e5;
+}
+
+.commodity-agri-table th{
+    width:220px;
+    background:#f3f5f8;
+    font-weight:700;
+    color:#2b3d56;
+    padding:18px;
+}
+
+.commodity-agri-table td{
+    padding:18px;
+    color:#555;
+}
+
+.commodity-agri-table tr{
+    border-bottom:1px solid #e8e8e8;
+}
+
+.commodity-agri-badge{
+    font-size:14px;
+    font-weight:600;
+}
+
+.commodity-agri-image img{
+    width:100%;
+    max-height:500px;
+    border-radius:8px;
+    box-shadow:0 20px 45px rgba(27,70,129,.18);
+}
+
+@media (max-width:991px){
+
+    .commodity-overview-section .commodity-overview-title h2{
+        font-size:30px;
+    }
+
+    .commodity-agri-content{
+        margin-bottom:40px;
+    }
+
+    .commodity-agri-content h3{
+        font-size:28px;
+    }
+}
+.metals-section{
+    background:#fff;
+    padding:80px 0;
+}
+
+.metals-container{
+    width:92%;
+    max-width:1650px;
+    margin:auto;
+}
+
+.metals-title{
+    font-size:42px;
+    font-weight:800;
+    color:#173d73;
+    text-transform:uppercase;
+    border-bottom:4px solid #173d73;
+    padding-bottom:20px;
+    margin-bottom:55px;
+    letter-spacing:.5px;
+}
+
+.metals-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    position:relative;
+    margin-bottom:60px;
+}
+
+.metals-grid::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:#e1e1e1;
+    transform:translateX(-35px);
+}
+
+.metals-left{
+    padding-right:35px;
+}
+
+.metals-right{
+    padding-left:35px;
+}
+
+.metals-grid h3{
+    color:#27548f;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.metals-grid p{
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.metals-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.metals-table tr{
+    border-bottom:1px solid #ddd;
+}
+
+.metals-table th{
+    width:230px;
+    background:#eef1f4;
+    color:#4c5665;
+    padding:16px 18px;
+    text-align:left;
+    font-size:17px;
+    font-weight:700;
+}
+
+.metals-table td{
+    padding:16px 18px;
+    font-size:17px;
+    color:#444;
+}
+
+.metals-product-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.metals-product-table thead th{
+    background:#eef1f4;
+    color:#4c5665;
+    padding:16px 18px;
+    text-align:left;
+    font-size:17px;
+    font-weight:700;
+}
+
+.metals-product-table tbody td{
+    padding:16px 18px;
+    border-bottom:1px solid #ddd;
+    font-size:17px;
+    color:#444;
+}
+
+.metals-banner{
+    margin-top:40px;
+}
+
+.metals-banner img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+    border-radius:6px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+@media (max-width:992px){
+
+    .metals-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .metals-grid::after{
+        display:none;
+    }
+
+    .metals-left,
+    .metals-right{
+        padding:0;
+    }
+
+    .metals-title{
+        font-size:32px;
+    }
+
+
+}
+
+.metals-banner img{
+    width:100%;
+    height:420px;
+    object-fit:fill;
+    border-radius:10px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+
+.industrial-section{
+    background:#fff;
+}
+
+.section-heading h2{
+    color:#12366f;
+    font-size:42px;
+    font-weight:700;
+}
+
+.heading-line{
+    width:100%;
+    height:3px;
+    background:#12366f;
+    opacity:1;
+    border:0;
+}
+
+.section-title{
+    color:#214f8b;
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.custom-table th{
+    background:#f2f4f7;
+    width:30%;
+    font-weight:700;
+}
+
+.custom-table td,
+.custom-table th{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.custom-table{
+    margin-top:20px;
+}
+
+.industrial-banner img{
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+
+.petro-section{
+    padding:70px 0;
+}
+
+.petro-container{
+    width:90%;
+    max-width:1350px;
+    margin:auto;
+}
+
+.petro-title{
+    font-size:42px;
+    font-weight:700;
+    color:#16386B;
+    margin-bottom:50px;
+    text-transform:uppercase;
+    border-bottom:4px solid #16386B;
+    padding-bottom:15px;
+}
+
+.petro-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+}
+
+.petro-card{
+    margin-bottom:55px;
+}
+
+.petro-card h2{
+    color:#1E4E89;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.petro-card p{
+    color:#444;
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.petro-info-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.petro-info-table th{
+    width:220px;
+    background:#eceff3;
+    text-align:left;
+    padding:18px;
+    font-size:20px;
+    color:#3b4658;
+}
+
+.petro-info-table td{
+    padding:18px;
+    border-bottom:1px solid #ddd;
+    font-size:20px;
+}
+
+.petro-product-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+.petro-product-table thead{
+    background:#eceff3;
+}
+
+.petro-product-table th{
+    padding:18px;
+    text-align:left;
+    font-size:20px;
+    color:#444;
+}
+
+.petro-product-table td{
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    vertical-align:top;
+    font-size:19px;
+}
+
+.petro-badge{
+    background:#dcecfb;
+    color:#1d5f9c;
+    font-weight:700;
+    padding:6px 12px;
+    border-radius:6px;
+    display:inline-block;
+    font-size:15px;
+}
+
+.petro-image{
+    margin-top:35px;
+}
+
+.petro-image img{
+    width:100%;
+    display:block;
+    border-radius:6px;
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+}
+
+/* Responsive */
+
+@media (max-width:991px){
+
+    .petro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .petro-title{
+        font-size:30px;
+    }
+
+    .petro-card h2{
+        font-size:28px;
+    }
+
+    .petro-info-table th{
+        width:170px;
+        font-size:17px;
+    }
+
+    .petro-info-table td{
+        font-size:17px;
+    }
+
+    .petro-product-table th{
+        font-size:17px;
+    }
+
+    .petro-product-table td{
+        font-size:16px;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .petro-info-table,
+    .petro-info-table tbody,
+    .petro-info-table tr,
+    .petro-info-table td,
+    .petro-info-table th{
+        display:block;
+        width:100%;
+    }
+
+    .petro-info-table th{
+        border-bottom:none;
+    }
+
+    .petro-info-table td{
+        margin-bottom:15px;
+    }
+
+    .petro-title{
+        font-size:24px;
+    }
+
+}
