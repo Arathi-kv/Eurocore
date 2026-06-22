@@ -563,15 +563,25 @@ CSS TABLE OF CONTENTS
 
 
 
+    
     // Allow only numbers in phone field
     document.getElementById("phone").addEventListener("input", function () {
         this.value = this.value.replace(/[^0-9]/g, '');
     });
 
-    // Resume validation
-    document.querySelector("form").addEventListener("submit", function(e) {
+    // Show selected file name
+    document.getElementById("resume").addEventListener("change", function () {
+        const fileName = this.files.length
+            ? this.files[0].name
+            : "No file selected";
 
-        const fileInput = document.querySelector('input[name="resume"]');
+        document.getElementById("file-name").textContent = fileName;
+    });
+
+    // Form validation
+    document.querySelector("form").addEventListener("submit", function (e) {
+
+        const fileInput = document.getElementById("resume");
         const file = fileInput.files[0];
 
         if (file) {
