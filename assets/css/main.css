@@ -8809,3 +8809,408 @@ textarea:focus:invalid {
     }
 
 }
+
+
+/*==================================================
+    RESPONSIVE - LARGE TABLETS
+==================================================*/
+@media (max-width:1200px){
+
+    .portfolio-cover{
+        padding:30px;
+    }
+
+    .company-title h2{
+        font-size:36px;
+    }
+
+    .portfolio-title h3{
+        font-size:28px;
+    }
+
+    .commodity-overview-box{
+        padding:25px;
+    }
+
+    .commodity-overview-box p{
+        font-size:17px;
+    }
+
+    .metals-title,
+    .petro-title,
+    .industry-heading h2{
+        font-size:34px;
+    }
+
+}
+
+
+/*==================================================
+    TABLETS
+==================================================*/
+@media (max-width:991px){
+
+    .portfolio-cover-section{
+        padding:40px 20px;
+    }
+
+    .portfolio-cover{
+        padding:25px;
+    }
+
+    .company-title{
+        text-align:center;
+    }
+
+    .company-title h2{
+        font-size:32px;
+    }
+
+    .company-title span{
+        font-size:15px;
+        letter-spacing:4px;
+    }
+
+    .portfolio-title{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .portfolio-info{
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .commodities-logo{
+        text-align:center;
+        margin-top:25px;
+    }
+
+    .commodities-logo img{
+        max-width:180px;
+    }
+
+    /* Overview */
+
+    .commodity-overview-title h2{
+        font-size:30px;
+    }
+
+    .commodity-overview-box{
+        padding:25px;
+    }
+
+    .commodity-overview-box p{
+        font-size:17px;
+    }
+
+    .commodity-agri-content{
+        margin-bottom:35px;
+    }
+
+    .commodity-agri-content h3{
+        font-size:28px;
+    }
+
+    /* Metals */
+
+    .metals-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .metals-grid::after{
+        display:none;
+    }
+
+    .metals-left,
+    .metals-right{
+        padding:0;
+    }
+
+    .metals-title{
+        font-size:30px;
+    }
+
+    .metals-banner img{
+        height:auto;
+    }
+
+    /* Industrial */
+
+    .industry-heading h2{
+        font-size:30px;
+    }
+
+    .industry-title{
+        font-size:26px;
+    }
+
+    .industrial-banner img{
+        height:auto;
+    }
+
+    /* Petro */
+
+    .petro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .petro-title{
+        font-size:30px;
+    }
+
+    .petro-card h2{
+        font-size:28px;
+    }
+
+    .petro-image img{
+        margin-top:15px;
+    }
+
+}
+
+
+/*==================================================
+    MOBILE
+==================================================*/
+@media (max-width:768px){
+
+    section{
+        overflow:hidden;
+    }
+
+    .portfolio-cover-section{
+        padding:30px 15px;
+    }
+
+    .portfolio-cover{
+        padding:20px;
+    }
+
+    .company-title h2{
+        font-size:26px;
+        letter-spacing:1px;
+    }
+
+    .portfolio-title h3{
+        font-size:24px;
+    }
+
+    .portfolio-title p{
+        font-size:14px;
+    }
+
+    .portfolio-info h5{
+        font-size:22px;
+    }
+
+    .portfolio-info p,
+    .portfolio-info li{
+        font-size:16px;
+    }
+
+    /* Overview */
+
+    .commodity-overview-title h2{
+        font-size:26px;
+    }
+
+    .commodity-overview-box{
+        padding:20px;
+    }
+
+    .commodity-overview-box p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .commodity-agri-content h3{
+        font-size:24px;
+    }
+
+    .commodity-agri-content p{
+        font-size:16px;
+    }
+
+    /* Metals */
+
+    .metals-section{
+        padding:60px 0;
+    }
+
+    .metals-container{
+        width:95%;
+    }
+
+    .metals-title{
+        font-size:26px;
+        line-height:1.4;
+    }
+
+    .metals-grid h3{
+        font-size:22px;
+    }
+
+    .metals-grid p{
+        font-size:16px;
+    }
+
+    .metals-banner img{
+        border-radius:8px;
+    }
+
+    /* Industrial */
+
+    .industry-heading h2{
+        font-size:26px;
+    }
+
+    .industry-title{
+        font-size:22px;
+    }
+
+    /* Petro */
+
+    .petro-section{
+        padding:60px 0;
+    }
+
+    .petro-container{
+        width:95%;
+    }
+
+    .petro-title{
+        font-size:26px;
+        line-height:1.4;
+    }
+
+    .petro-card h2{
+        font-size:22px;
+    }
+
+    .petro-card p{
+        font-size:16px;
+    }
+
+}
+
+
+/*==================================================
+    TABLES
+==================================================*/
+@media (max-width:768px){
+
+    .commodity-agri-table,
+    .metals-table,
+    .metals-product-table,
+    .petro-info-table,
+    .petro-product-table{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+        white-space:nowrap;
+        -webkit-overflow-scrolling:touch;
+    }
+
+}
+
+
+/*==================================================
+    SMALL MOBILES
+==================================================*/
+@media (max-width:576px){
+
+    .company-title h2{
+        font-size:22px;
+    }
+
+    .company-title span{
+        font-size:13px;
+        letter-spacing:2px;
+    }
+
+    .portfolio-title h3{
+        font-size:20px;
+    }
+
+    .commodity-overview-title h2,
+    .metals-title,
+    .industry-heading h2,
+    .petro-title{
+        font-size:22px;
+    }
+
+    .commodity-overview-box{
+        padding:18px;
+    }
+
+    .commodity-overview-box p,
+    .commodity-agri-content p,
+    .metals-grid p,
+    .petro-card p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .commodity-agri-content h3,
+    .metals-grid h3,
+    .industry-title,
+    .petro-card h2{
+        font-size:20px;
+    }
+
+    .metals-table th,
+    .metals-table td,
+    .petro-info-table th,
+    .petro-info-table td,
+    .petro-product-table th,
+    .petro-product-table td,
+    .commodity-agri-table th,
+    .commodity-agri-table td,
+    .custom-table th,
+    .custom-table td{
+        padding:12px;
+        font-size:14px;
+    }
+
+    .commodity-agri-image img,
+    .metals-banner img,
+    .industrial-banner img,
+    .petro-image img{
+        border-radius:6px;
+    }
+
+}
+
+
+/*==================================================
+    EXTRA SMALL DEVICES
+==================================================*/
+@media (max-width:400px){
+
+    .portfolio-cover{
+        padding:15px;
+    }
+
+    .company-title h2{
+        font-size:19px;
+    }
+
+    .portfolio-title h3{
+        font-size:18px;
+    }
+
+    .commodity-overview-title h2,
+    .metals-title,
+    .industry-heading h2,
+    .petro-title{
+        font-size:20px;
+    }
+
+    .commodity-overview-box,
+    .petro-card{
+        margin-bottom:25px;
+    }
+
+}
