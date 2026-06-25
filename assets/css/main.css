@@ -9331,6 +9331,25 @@ textarea:focus:invalid {
     margin-top: auto;
 }
 
+
+
+
+
+
+.video-bg .row,
+.video-bg .hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.swiper-slide .hero-content {
+    opacity: 0;
+}
+
+.swiper-slide-active .hero-content {
+    opacity: 1;
+}
+
 /*video for hero */
 .hero-section{
     position:relative;
