@@ -610,4 +610,20 @@ CSS TABLE OF CONTENTS
 
 
 
-    
+    let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('heroVideo', {
+        events: {
+            onReady: function () {
+
+                // Repeat every 20 seconds
+                setInterval(function () {
+                    player.seekTo(0); // Go to beginning
+                    player.playVideo(); // Play again
+                }, 20000);
+
+            }
+        }
+    });
+}
