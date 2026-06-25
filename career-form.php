@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    $to = "arathi@signroots.com";  // Your email id
+    $to = "company@mailid.com";  // Your email id for form receving
 
     $subject = "New Job Application - " . $fullname;
 
