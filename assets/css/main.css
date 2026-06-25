@@ -9332,227 +9332,47 @@ textarea:focus:invalid {
 }
 
 /*video for hero */
-.video-bg {
-    position: relative;
-    overflow: hidden;
+.hero-section{
+    position:relative;
+    overflow:hidden;
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 2;
-}
-
-.video-bg .row,
-.video-bg .hero-content {
-    position: relative;
-    z-index: 3;
-}
-
-.swiper-slide .hero-content {
-    opacity: 0;
-}
-
-.swiper-slide-active .hero-content {
-    opacity: 1;
-}
-
-
-.video-bg {
-    position: relative;
-    overflow: hidden;
-    min-height: 850px;
-}
-
-.hero-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.hero-video iframe {
+.hero-video{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border:0;
-}
-.video-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 2;
+    inset:0;
+    z-index:1;
 }
 
-/* Hero Section */
-.video-bg {
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.hero-video iframe{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:177.77vh;
+    height:56.25vw;
+    min-width:100%;
+    min-height:100%;
+    transform:translate(-50%, -50%);
+    pointer-events:none;
 }
 
-/* YouTube Background */
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 56.25vw; /* 16:9 ratio */
-    min-height: 100vh;
-    min-width: 177.77vh;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    pointer-events: none;
+.video-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:2;
 }
 
-.hero-video iframe,
-.hero-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero-slider-3{
+    position:relative;
+    z-index:3;
 }
 
-
-/* Overlay */
-.video-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 2;
+.hero-slider-3 .swiper-slide{
+    min-height:850px;
+    display:flex;
+    align-items:center;
 }
 
-
-.hero-content {
-    position: relative;
-    z-index: 3;
-}
-
-
-/* Desktop */
-.hero-content h1 {
-    font-size: 60px;
-    line-height: 1.1;
-}
-
-/* Mobile Hero Fix */
-@media (max-width: 575px) {
-
-    .hero-section,
-    .swiper,
-    .swiper-slide,
-    .hero-image {
-        min-height: 100vh;
-    }
-
-
-    .video-bg {
-        min-height: 100vh !important;
-        height: 100vh;
-    }
-
-
-    /* YouTube background mobile */
-    .hero-video {
-        width: 220%;
-        height: 100%;
-        min-width: 220%;
-        min-height: 100%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .hero-video iframe {
-        width:100%;
-        height:100%;
-        object-fit:cover;
-    }
-
-
-    .video-overlay {
-        background: rgba(0,0,0,0.55);
-    }
-
-
-    .hero-content {
-        padding: 0 25px;
-        text-align:center;
-        margin-top:80px;
-    }
-
-
-    .hero-content h1 {
-        font-size:32px;
-        line-height:1.15;
-        margin-bottom:20px;
-    }
-
-
-    .hero-content p {
-        font-size:15px;
-        line-height:1.6;
-    }
-
-
-    .hero-button {
-        margin-top:25px;
-    }
-
-
-    .theme-btn {
-        padding:14px 25px;
-    }
-
-}
-
-
-
-@media (max-width: 767px){
-
-    .hero-content h1{
-        font-size: 34px;
-        line-height: 1.2;
-    }
-
-    .hero-content p{
-        font-size: 15px;
-    }
-
-    .hero-content{
-        padding: 120px 20px 60px;
-        text-align:center;
-    }
-}
-@media (max-width: 767px){
-
-    .hero-slider,
-    .swiper-slide{
-        height: auto !important;
-        min-height: 100svh;
-    }
-}
-.swiper-slide {
-    height: auto !important;
-}
-
-.hero-slider {
-    overflow: hidden;
+.hero-content{
+    color:#fff;
 }
