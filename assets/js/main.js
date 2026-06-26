@@ -550,13 +550,10 @@ CSS TABLE OF CONTENTS
     }); // End Document Ready Function
 
     function loader() {
-        $(window).on('load', function() {
-            // Animate loader off screen
-            $(".preloader").addClass('loaded');
-            $(".preloader").delay(600).fadeOut();
-        });
-    }
-
+    $(window).on('load', function() {
+        $(".preloader").hide();
+    });
+}
     loader();
 
 })(jQuery); // End jQuery
@@ -610,20 +607,4 @@ CSS TABLE OF CONTENTS
 
 
 
-    let player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('heroVideo', {
-        events: {
-            onReady: function () {
-
-                // Repeat every 20 seconds
-                setInterval(function () {
-                    player.seekTo(0); // Go to beginning
-                    player.playVideo(); // Play again
-                }, 20000);
-
-            }
-        }
-    });
-}
+    
