@@ -9538,34 +9538,30 @@ textarea:focus:invalid {
         font-size:15px;
     }
 }
-/* Mobile Hero Banner */
-@media (max-width: 767px) {
+@media (max-width:767px){
 
     .hero-section,
     .hero-slider-3,
     .hero-slider-3 .swiper-wrapper,
     .hero-slider-3 .swiper-slide,
-    .hero-image.video-bg {
-        height: 500px !important;
-        min-height: 500px !important;
+    .hero-image.video-bg{
+        height:500px !important;
+        min-height:500px !important;
     }
 
-    .hero-content {
-        padding: 100px 20px 40px;
-        text-align: center;
+    .hero-image.video-bg{
+        display:flex;
+        align-items:center;
     }
 
-    .hero-content h1 {
-        font-size: 30px;
-        line-height: 1.2;
+    .hero-image.video-bg .row{
+        width:100%;
+        margin:0;
     }
 
-    .hero-content p {
-        font-size: 15px;
-        margin-bottom: 20px;
+    .hero-content{
+        padding:0 20px;
+        margin-top:0;
     }
 
-    .hero-button {
-        margin-top: 20px;
-    }
 }
